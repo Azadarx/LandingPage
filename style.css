@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c5e2ff !important ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+navbar {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  width: 80%;
+  margin-top: 25px;
+  margin-left: 120px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.116);
+}
+
+navbar #login {
+  background-color: transparent;
+  border: 2px solid rgb(46, 157, 200);
+  color: rgb(46, 157, 200);
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 26px;
+}
+navbar #login:hover {
+  background-color: rgb(46, 157, 200);
+  color: white;
+}
+
+navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+navbar a:focus {
+  color: rgb(46, 157, 200);
+}
+
+navbar a:hover {
+  color: rgb(46, 157, 200);
+}
+
+navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+navbar .heading {
+  font-size: 24px;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  color: #737373;
+  flex-grow: 1;
+}
+
+navbar button {
+  margin-left: 600px;
+  margin-right: 20px;
+  width: 6vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  margin-top: 25px;
+  margin-left: 120px;
+  width: 80%;
+  background-color: #f3f9ff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.116);
+  transition: background-color 0.3s ease;
+}
+
+main .content h1 {
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 80px;
+}
+main .content h1 span {
+  color: rgb(46, 157, 200);
+}
+
+main .content img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
