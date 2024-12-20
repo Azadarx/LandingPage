@@ -5,14 +5,23 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const passwordRegex =
     /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,15}$/;
 
-  if (!passwordRegex.test(password)) {
-    alert(
-      "Password must be between 8-15 characters, contain at least one uppercase letter, one number, and one special character."
-    );
+  if (password === "" && username === "") {
+    alert("Please enter a username and password!");
+    return;
+  }
+
+  if (password === "") {
+    alert("Please enter a password!");
     return;
   }
   if (username === "") {
     alert("Please enter a username!");
+    return;
+  }
+  if (!passwordRegex.test(password)) {
+    alert(
+      "Password must be between 8-15 characters, contain at least one uppercase letter, one number, and one special character."
+    );
     return;
   }
   localStorage.setItem("username", username);
